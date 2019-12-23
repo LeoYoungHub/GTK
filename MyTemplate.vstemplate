@@ -1,0 +1,25 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>GtkSharpApplication</Name>
+    <Description>Gtk for .Net Core Application</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GtkSharpApplication</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MyApp1.csproj" File="MyApp1.csproj" ReplaceParameters="true">
+      <Folder Name=".vs" TargetFolderName=".vs" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.cs">MainWindow.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="MainWindow.glade">MainWindow.glade</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

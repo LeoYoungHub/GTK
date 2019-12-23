@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="**\*.glade" />
+    <EmbeddedResource Include="**\*.glade">
+      <LogicalName>%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="GtkSharpApplication.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GtkSharp" Version="3.22.24.*" />
+    <PackageReference Include="NewLife.Core" Version="8.4.2019.1212" />
+    <PackageReference Include="System.IO.Ports" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>
