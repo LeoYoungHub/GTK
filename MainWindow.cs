@@ -41,6 +41,7 @@ namespace safeprojectname
 				count++;
 			}
 			Console.WriteLine("输入要打开的串口编号：" + ports.Keys.Join(","));
+
 			string portName = ports["2"];
 
 			_SerialPort = new SerialPort(portName, 9600, Parity.None, 8, StopBits.One);
